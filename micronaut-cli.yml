@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.weedro
+testFramework: junit
+sourceLanguage: kotlin
+buildTool: gradle_kotlin
+features: [ annotation-api, app-name, gradle, http-client, jackson-databind, junit, kafka, kotlin, kotlin-application, kotlin-build, kotlin-extension-functions, logback, micronaut-build, netty-server, reactor, reactor-http-client, readme, shade, yaml ]
