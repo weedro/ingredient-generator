@@ -32,7 +32,6 @@ class IngredientPublisher(
     @EventListener
     fun createIngredient(event: StartupEvent?): Ingredient? =
         generateSequence(0) { it }.toFlux()
-//            .delayElements(Duration.parse(generateIngredientDelay))
                 .delayElements(Duration.ofSeconds(15))
                 .log("generate ingredient")
                 .map { ingredientService.generateIngredient() }
